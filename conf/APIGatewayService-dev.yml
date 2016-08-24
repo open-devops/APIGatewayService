@@ -13,11 +13,10 @@ zuul:
   routes:
     role-service:
       path: /roles/**
-      serviceId: role-service
+      url: forward:/roles
     account-service:
       path: /accounts/**
-      serviceId: account-service
+      url: forward:/accounts
     organization-service:
       path: /organization/**
-      serviceId: organization-service
-      
+      url: forward:/organizations
