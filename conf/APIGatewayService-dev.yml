@@ -1,5 +1,6 @@
 server:
     port: 8600
+    #全局路径前缀
     contextPath: /api
 spring: 
     application:
@@ -10,6 +11,7 @@ eureka:
             defaultZone: http://16.187.145.11:8500/eureka/
 
 zuul:
+  #服务跳转映射，依赖于Eureka的Service-ID
   routes:
     role-service:
       path: /roles/**
@@ -18,5 +20,5 @@ zuul:
       path: /accounts/**
       stripPrefix: false
     organization-service:
-      path: /organization/**
+      path: /organizations/**
       stripPrefix: false
