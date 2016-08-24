@@ -12,11 +12,11 @@ eureka:
 zuul:
   routes:
     role-service:
-      path: /roles/**
-      url: forward:/roles
+      path: /api/roles/**
+      #stripPrefix: false
     account-service:
-      path: /accounts/**
-      url: forward:/accounts
+      path: /api/accounts/**
+      #stripPrefix: false
     organization-service:
-      path: /organization/**
-      url: forward:/organizations
+      path: /api/organization/**
+      #stripPrefix: false
