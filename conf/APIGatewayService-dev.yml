@@ -1,6 +1,6 @@
 server:
     port: 8600
-
+    contextPath: /api
 spring: 
     application:
         name: apigateway-service
@@ -15,8 +15,8 @@ zuul:
       path: /roles/**
       stripPrefix: false
     account-service:
-      path: /api/accounts/**
-      stripPrefix: true
+      path: /accounts/**
+      stripPrefix: false
     organization-service:
       path: /organization/**
       stripPrefix: false
