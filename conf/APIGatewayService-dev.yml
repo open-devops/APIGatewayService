@@ -1,0 +1,23 @@
+server:
+    port: 8600
+
+spring: 
+    application:
+        name: apigateway-service
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://16.187.145.11:8500/eureka/
+
+zuul:
+  routes:
+    role-service:
+      path: /roles/**
+      serviceId: role-service
+    account-service:
+      path: /accounts/**
+      serviceId: account-service
+    organization-service:
+      path: /organization/**
+      serviceId: organization-service
+      
