@@ -15,8 +15,8 @@ zuul:
       path: /roles/**
       stripPrefix: false
     account-service:
-      path: /accounts/**
-      stripPrefix: false
+      path: /api/accounts/**
+      stripPrefix: true
     organization-service:
       path: /organization/**
       stripPrefix: false
