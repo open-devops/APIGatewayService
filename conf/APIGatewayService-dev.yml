@@ -22,3 +22,6 @@ zuul:
     organization-service:
       path: /organizations/**
       stripPrefix: false
+    product-service:
+      path: /products/**
+      stripPrefix: false
