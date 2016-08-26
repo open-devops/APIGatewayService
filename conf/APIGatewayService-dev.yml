@@ -25,3 +25,6 @@ zuul:
     product-service:
       path: /products/**
       stripPrefix: false
+    permission-service:
+      path: /permissions/**
+      stripPrefix: false
