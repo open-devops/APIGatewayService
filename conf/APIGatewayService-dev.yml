@@ -28,3 +28,7 @@ zuul:
     permission-service:
       path: /permissions/**
       stripPrefix: false
+    pipeline-service:
+      path: /v1/pipelines/**
+      stripPrefix: false
+      url: http://16.187.145.11:8700/v1/pipelines
